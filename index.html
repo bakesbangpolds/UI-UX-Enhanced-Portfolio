@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Styles - Professional Portfolio Website showcasing UI/UX design expertise">
+    <meta name="keywords" content="portfolio, UI design, UX design, web design, professional">
+    <meta name="author" content="Alex Styles">
+    <title>Alex Styles - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Alex Styles</h1>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to My Portfolio</h2>
+            <p class="hero-subtitle">UI/UX Designer & Creative Developer</p>
+            <p class="hero-description">Crafting beautiful, user-centered digital experiences</p>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A selection of my recent design and development work</p>
+            
+            <div class="portfolio-grid">
+                <!-- Project Card 1 -->
+                <article class="project-card" tabindex="0">
+                    <div class="project-image project-image-1"></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A modern e-commerce site redesign focusing on user experience and conversion optimization.</p>
+                        <div class="project-tags">
+                            <span class="tag">UI Design</span>
+                            <span class="tag">UX Research</span>
+                        </div>
+                        <button class="project-btn" data-project="1">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card" tabindex="0">
+                    <div class="project-image project-image-2"></div>
+                    <div class="project-content">
+                        <h3>Mobile App Interface</h3>
+                        <p>iOS and Android app design with focus on accessibility and intuitive navigation patterns.</p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile Design</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                        <button class="project-btn" data-project="2">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card" tabindex="0">
+                    <div class="project-image project-image-3"></div>
+                    <div class="project-content">
+                        <h3>SaaS Dashboard</h3>
+                        <p>Complex data visualization dashboard with real-time analytics and interactive components.</p>
+                        <div class="project-tags">
+                            <span class="tag">Dashboard</span>
+                            <span class="tag">Data Viz</span>
+                        </div>
+                        <button class="project-btn" data-project="3">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Project Card 4 -->
+                <article class="project-card" tabindex="0">
+                    <div class="project-image project-image-4"></div>
+                    <div class="project-content">
+                        <h3>Brand Identity System</h3>
+                        <p>Complete brand refresh including logo, color palette, typography, and design guidelines.</p>
+                        <div class="project-tags">
+                            <span class="tag">Branding</span>
+                            <span class="tag">Design System</span>
+                        </div>
+                        <button class="project-btn" data-project="4">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Project Card 5 -->
+                <article class="project-card" tabindex="0">
+                    <div class="project-image project-image-5"></div>
+                    <div class="project-content">
+                        <h3>Educational Platform</h3>
+                        <p>Learning management system redesign with improved course discovery and student engagement.</p>
+                        <div class="project-tags">
+                            <span class="tag">EdTech</span>
+                            <span class="tag">Web Design</span>
+                        </div>
+                        <button class="project-btn" data-project="5">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Project Card 6 -->
+                <article class="project-card" tabindex="0">
+                    <div class="project-image project-image-6"></div>
+                    <div class="project-content">
+                        <h3>Healthcare Portal</h3>
+                        <p>Patient-facing healthcare portal with secure authentication, appointment booking, and medical records.</p>
+                        <div class="project-tags">
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Accessibility</span>
+                        </div>
+                        <button class="project-btn" data-project="6">View Details</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate UI/UX designer and creative developer with 5+ years of experience creating digital solutions that users love. My approach combines user research, visual design, and interactive technology to build experiences that are both beautiful and functional.</p>
+                    
+                    <p>I specialize in translating complex problems into simple, intuitive interfaces. Whether working on web applications, mobile apps, or design systems, I focus on creating accessible, performant solutions that delight users and drive business results.</p>
+                    
+                    <p>My process emphasizes collaboration, iteration, and data-driven decision making. I believe that great design is a team effort, and I love working with developers, product managers, and stakeholders to bring visions to life.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>50+</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>30+</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>5+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>100%</h4>
+                        <p>Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>UI Design</h3>
+                    <p>Creating intuitive and beautiful user interfaces using modern design tools and principles</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>UX Research</h3>
+                    <p>User research, testing, and validation to inform design decisions</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first approach ensuring seamless experiences across all devices</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, and JavaScript to bring designs to life</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Prototyping & Wireframing</h3>
+                    <p>Low and high-fidelity prototypes to validate concepts quickly</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 93%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Design Systems</h3>
+                    <p>Creating scalable design systems and component libraries</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 87%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <a href="mailto:alex@example.com">alex.styles@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <a href="tel:+1234567890">+1 (234) 567-8900</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Location</h4>
+                        <p>San Francisco, CA</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="LinkedIn">LinkedIn</a>
+                            <a href="#" class="social-link" title="Twitter">Twitter</a>
+                            <a href="#" class="social-link" title="GitHub">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project topic">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <h3 id="modalTitle"></h3>
+            <img id="modalImage" src="" alt="Project image">
+            <p id="modalDescription"></p>
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Alex Styles</h4>
+                    <p>UI/UX Designer & Creative Developer</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alex Styles. All rights reserved.</p>
+                <p>Developed with Microsoft Copilot assistance</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
